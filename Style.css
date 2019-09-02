@@ -1,0 +1,8 @@
+.header-down-arrow {
+  position: relative;
+  width: 100px;
+  height: auto;
+  bottom: 0;
+  top: 70px;
+  text-align: center;
+}
