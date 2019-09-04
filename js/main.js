@@ -103,6 +103,33 @@
 	
 	};
 
+	var goToNext = function() {
+
+		$('.header-down-arrow').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html, body').animate({
+	
+				scrollTop: $('#fh5co-about').offset().top
+			}, 500, 'easeInOutExpo');
+			
+			return false;
+		});
+
+		// $(window).scroll(function(){
+
+		// 	var $win = $(window);
+		// 	if ($win.scrollTop() > 200) {
+		// 		$('.js-top').addClass('active');
+		// 	} else {
+		// 		$('.js-top').removeClass('active');
+		// 	}
+
+		// });
+	
+	};
+
 	var pieChart = function() {
 		$('.chart').easyPieChart({
 			scaleColor: false,
@@ -138,6 +165,7 @@
 	$(function(){
 		contentWayPoint();
 		goToTop();
+		goToNext();
 		loaderPage();
 		fullHeight();
 		parallax();
