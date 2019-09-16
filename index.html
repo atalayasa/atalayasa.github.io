@@ -542,28 +542,27 @@
 		</div>
 		<div class="choose animate-box">
 			<h2>Contact</h2>
-			<div class="elfsight-app-e3bdb0f2-5353-409e-aaf8-e1585daaec24"></div>
-			<!-- <form method="post" action="https://atalay-contact.dev.with-datafire.io/contact">
+			<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzx95eibarW3oJvkEiFCP-iyzqkVtCO5rv0IVMs/exec">
 				<div class="row form-group">
 					<div class="col-md-6">
-						<input type="text" id="fName" name="fName" class="form-control" placeholder="Your firstname">
+						<input type="text" id="fName" name="name" class="form-control" placeholder="Your firstname">
 					</div>
 				</div>
 				<div class="row form-group">
 					<div class="col-md-6">
-						<input type="text" id="lName"  name="lName" class="form-control" placeholder="Your lastname">
+						<input type="text" id="lName"  name="surname" class="form-control" placeholder="Your lastname">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="emailAddress" name="emailAddress" class="form-control" placeholder="Your email address">
+						<input type="text" id="email" name="email" class="form-control" placeholder="Your email address">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="title" class="form-control" name="title" placeholder="Your subject of this message">
+						<input type="text" id="title" class="form-control" name="messageTitle" placeholder="Your subject of this message">
 					</div>
 				</div>
 
@@ -575,7 +574,13 @@
 				<div class="form-group">
 					<input type="submit" value="Send Message" class="btn btn-primary">
 				</div>
-			</form> -->
+
+				<div class="thankyou_message" style="display:none;">
+				      <h2><em>Thanks</em> for contacting us!
+				        We will get back to you soon!</h2>
+				    </div>
+
+			</form>
 		</div>
 	</div>
 
@@ -599,10 +604,10 @@
 	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<script src="js/google_map.js"></script> -->
 	<!-- Main -->
-	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 	<script src="js/main.js"></script>
 	<script src="js/EasePack.min.js"></script>
 	<script src="js/TweenLite.min.js"></script>
 	<script src="js/header.js"></script>
+	<script src="js/ajaxCall.js" data-cfasync="false" type="text/javascript"></script>
 	</body>
 </html>
