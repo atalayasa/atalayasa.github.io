@@ -99,7 +99,7 @@
     function resize() {
         width = window.innerWidth;
         height = window.innerHeight;
-        largeHeader.style.height = height+'px';
+        // largeHeader.style.height = height+'px';
         canvas.width = width;
         canvas.height = height;
     }
@@ -118,13 +118,13 @@
             for(var i in points) {
                 // detect points in range
                 if(Math.abs(getDistance(target, points[i])) < 4000) {
-                    points[i].active = 0.3;
-                    points[i].circle.active = 0.6;
+                    points[i].active = 1;
+                    points[i].circle.active = 1;
                 } else if(Math.abs(getDistance(target, points[i])) < 20000) {
-                    points[i].active = 0.1;
-                    points[i].circle.active = 0.3;
+                    points[i].active = 0.5;
+                    points[i].circle.active = 0.5;
                 } else if(Math.abs(getDistance(target, points[i])) < 40000) {
-                    points[i].active = 0.02;
+                    points[i].active = 0.1;
                     points[i].circle.active = 0.1;
                 } else {
                     points[i].active = 0;
